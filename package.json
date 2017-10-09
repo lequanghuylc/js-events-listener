@@ -1,0 +1,25 @@
+{
+  "name": "events-listener",
+  "version": "1.0.0",
+  "description": "Events Listener for javascript project (nodejs & react-native)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lequanghuylc/events-listener.git"
+  },
+  "keywords": [
+    "Event",
+    "listener",
+    "nodejs",
+    "react-native"
+  ],
+  "author": "Le Quang Huy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lequanghuylc/events-listener/issues"
+  },
+  "homepage": "https://github.com/lequanghuylc/events-listener#readme"
+}

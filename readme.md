@@ -4,8 +4,8 @@ This is a fork from 'react-native-event-listeners' and converted to ES5 for othe
 
 ```javascript
 // import
-import { EventRegister } from 'events-listener'
-// or const EventRegister = require('events-listener');
+import { EventRegister } from 'js-events-listener'
+// or const EventRegister = require('js-events-listener');
 ```
 
 | static method       | return value      | description                                                    |

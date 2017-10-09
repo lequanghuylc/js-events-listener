@@ -1,3 +1,5 @@
+This is a fork from 'react-native-event-listeners' and converted to ES5 for other javascript enviroments.
+
 ## API
 
 ```javascript

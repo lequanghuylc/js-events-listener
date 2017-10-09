@@ -88,5 +88,5 @@ EventRegister._Listeners = {
 };
 exports.EventRegister = EventRegister;
 
-module.export = EventRegister;
+module.exports = EventRegister;
 exports.default = EventRegister;

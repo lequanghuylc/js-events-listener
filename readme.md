@@ -1,4 +1,3 @@
-This is a fork from 'react-native-event-listeners' and converted to ES5 for other javascript enviroments. This library can run on `Nodejs`, `reactjs` and pretty much all JS enviroments.
 It started as a fork of `react-native-event-listeners`. Now it is rewritten with Typescript and React Hooks support.
 
 If you use `React`, check out the simple yet powerful hooks and state management at [react.md](./react.md)

@@ -1,6 +1,8 @@
 
 Take a look at `./src/react.ts` to see the code snippet is really short & simple, but it can do alot of things.
 
+[Codesandbox example](https://codesandbox.io/s/js-events-listener-pmm9t) 
+
 ## Event Hooks
 
 ```javascript

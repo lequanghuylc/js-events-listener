@@ -1,6 +1,6 @@
 {
   "name": "js-events-listener",
-  "version": "1.1.4",
+  "version": "1.1.6",
   "description": "Events Listener for javascript project (nodejs, reactjs & react-native)",
   "main": "index.js",
   "types": "index.d.ts",
@@ -29,6 +29,7 @@
   "homepage": "https://github.com/lequanghuylc/events-listener#readme",
   "devDependencies": {
     "@types/node": "^14.14.31",
-    "@types/react": "^17.0.2"
+    "@types/react": "^17.0.2",
+    "typescript": "^4.3.2"
   }
 }

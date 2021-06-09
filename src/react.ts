@@ -15,7 +15,14 @@ export const useEvent = <T>(name : string, callback : ICallback<T>, arrayOfState
 
 export const useGlobalState = <T>(initialValue : T, uniqueId : string) : [T, (v: T) => void] => {
   const valueRef = useRef(initialValue);
+  const isMounted = useRef(false);
   const [value, setValue] = useState(valueRef.current);
+  useEffect(() => {
+    isMounted.current = true;
+    return () => {
+      isMounted.current = false;
+    };
+  }, []);
   useEffect(() => {
     GlobalEvent.emit('GLOBAL_STATE_'+uniqueId, value);
   }, [value]);
@@ -25,7 +32,11 @@ export const useGlobalState = <T>(initialValue : T, uniqueId : string) : [T, (v:
       valueRef.current = newValue;
     }
   }, [value]);
-  return [value, setValue];
+  const setValueWithMountStatusHandling = (newValue: T) => {
+    if (isMounted.current) return setValue(newValue);
+    GlobalEvent.emit('GLOBAL_STATE_'+uniqueId, newValue);
+  };
+  return [value, setValueWithMountStatusHandling];
 }
 
 type TValueType = 'string' | 'number' | 'object'
